@@ -53,12 +53,12 @@ export function EditForm (props) {
           <Form onSubmit={updateData(props.data.id)}>
           <Form.Group className="mb-3" controlId="formBasicName">
               <Form.Label>Name:</Form.Label>
-              <Form.Control type="text" value={name} onChange={changeName}/>
+              <Form.Control type="text" value={name} onChange={changeName} required />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" value={email} onChange={changeEmail}/>
+              <Form.Control type="email" value={email} onChange={changeEmail} required/>
               <Form.Text className="text-muted">
                 We'll never share your email with anyone else.
               </Form.Text>
@@ -66,12 +66,12 @@ export function EditForm (props) {
 
             <Form.Group className="mb-3" controlId="formBasicPhone">
               <Form.Label>Phone</Form.Label>
-              <Form.Control type="text" value={phone} onChange={changePhone}/>
+              <Form.Control type="text" value={phone} onChange={changePhone} required />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicWebsite">
               <Form.Label>Website</Form.Label>
-              <Form.Control type="text" value={website} onChange={changeWebsite}/>
+              <Form.Control type="text" value={website} onChange={changeWebsite} required />
             </Form.Group>
           </Form>
 
