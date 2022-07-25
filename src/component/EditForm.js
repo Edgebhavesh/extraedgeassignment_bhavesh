@@ -46,7 +46,7 @@ export function EditForm (props) {
   }
 
   const changeEmail=(e)=>{  
-    if(!isValidEmail(e.target.value) && (e.target.value).length==0)
+    if(!isValidEmail(e.target.value) || (e.target.value).length==0)
     {
         seterrorEmail("invalid email");
         setright(false);
