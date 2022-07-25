@@ -1,0 +1,39 @@
+
+.ant-row::after,.ant-row::before{
+    content: '';
+    display: table;
+}
+
+*,:after,:before{
+    box-sizing: border-box;
+}
+
+
+
+@media only screen and (min-width: 400px) and (max-width: 767px)
+{
+    .responsive{
+        margin: 2px 5px 2px 40px ;
+    }
+}
+
+@media only screen and (min-width: 361px) and (max-width: 399px)
+{
+    .responsive{
+        margin: 2px 5px 2px 29px ;
+    }
+}
+
+@media only screen and (max-width: 360px)
+{
+    .responsive{
+        margin: 2px 5px 2px 19px ;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px)
+{
+    .responsive{
+        margin: 2px 5px 2px 50px ;
+    }
+}
